@@ -23,7 +23,7 @@ Case2可以读取本地服务器上的模型文件进行加载，避免了模型
 模型文件放到相应的文件夹内，通过编辑器扩展（[MenuItem("BVA Test/SaveJsonCase2")]）生成config.json文件，选择服务器目录Path即可。
 
 ## Example
-先拉取[UnityBVA](https://github.com/bilibili/UnityBVA)的SDK将BVA和Third-Party放进Assets文件夹里
+先拉取[UnityBVA](https://github.com/bilibili/UnityBVA)的SDK将Assets文件夹下的BVA和Third-Party文件夹放进Assets文件夹里
 首先选择一个目录作为本地服务器，例如：
 > D:\TestServer
 
