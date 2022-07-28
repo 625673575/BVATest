@@ -25,12 +25,13 @@ Case2可以读取本地服务器上的模型文件进行加载，避免了模型
 ## Example
 先拉取[UnityBVA](https://github.com/bilibili/UnityBVA)的SDK将Assets文件夹下的BVA和Third-Party文件夹放进Assets文件夹里
 首先选择一个目录作为本地服务器，例如：
-> D:\TestServer
+
+> D:\TestServer，并在里面建立上述三个文件夹
 
 通过编辑器扩展"BVA Test/SaveJsonCase2"，选择该目录，点击SaveJson，就会在该目录下生成子文件夹和config.json初始文件。
 将模型文件放到对应的文件夹中，再次点击SaveJson就能在config.json中保存到模型文件的具体路径信息。
 
-这里使用的是Python3的http.server功能。确保机器已经安装Python3，并且设置了环境变量，然后输入指令（最后为端口号）
+这里使用的是Python3的 http.server 功能。确保机器已经安装Python3，并且设置了环境变量，然后输入指令（最后为端口号）
 进入到D:\TestServer，执行以下命令行
 > python -m http.server 7777
 
