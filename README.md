@@ -5,11 +5,15 @@
 \Assets\Scenes\Case2主要测试三个方向：
 - Avatar类型模型加载
 - Scene类型模型加载
-- MultiScene混合模型加载
+- MultiScene多场景模型加载
 
 ## Case1
 
 Case1将模型内置，可以直接打包测试，适用于PC，Android，iOS三端
+
+![image](https://user-images.githubusercontent.com/10473349/181674201-83da4789-088c-4e70-bada-bb9cfee13898.png)
+
+官方模型全存放在项目当中，跟随打包可直接在移动端运行。
 
 ## Case2
 
@@ -23,14 +27,15 @@ Case2可以读取本地服务器上的模型文件进行加载，避免了模型
 模型文件放到相应的文件夹内，通过编辑器扩展（[MenuItem("BVA Test/SaveJsonCase2")]）生成config.json文件，选择服务器目录Path即可。
 
 ## Example
-
+先拉取[UnityBVA](https://github.com/bilibili/UnityBVA)的SDK将Assets文件夹下的BVA和Third-Party文件夹放进Assets文件夹里
 首先选择一个目录作为本地服务器，例如：
-> D:\TestServer
+
+> D:\TestServer，并在里面建立上述三个文件夹
 
 通过编辑器扩展"BVA Test/SaveJsonCase2"，选择该目录，点击SaveJson，就会在该目录下生成子文件夹和config.json初始文件。
 将模型文件放到对应的文件夹中，再次点击SaveJson就能在config.json中保存到模型文件的具体路径信息。
 
-这里使用的是Python3的http.server功能。确保机器已经安装Python3，并且设置了环境变量，然后输入指令（最后为端口号）
+这里使用的是Python3的 http.server 功能。确保机器已经安装Python3，并且设置了环境变量，然后输入指令（最后为端口号）
 进入到D:\TestServer，执行以下命令行
 > python -m http.server 7777
 
