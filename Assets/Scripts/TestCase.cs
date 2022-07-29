@@ -35,7 +35,7 @@ public class TestCase : MonoBehaviour
     private void Start()
     {
         DirectoryInfo info = null;
-#if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN || UNITY_IOS
+#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_IOS
         info = new DirectoryInfo(Application.streamingAssetsPath);
 
 

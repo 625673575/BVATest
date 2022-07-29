@@ -36,7 +36,7 @@ public class AroundCamera : MonoBehaviour
 
         if (Enable)
         {
-#if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
+#if UNITY_EDITOR || UNITY_STANDALONE
             if (_target != null)
             {
                 float scrollWheel = Input.GetAxis("Mouse ScrollWheel");
