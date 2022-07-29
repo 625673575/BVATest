@@ -5,7 +5,7 @@
 \Assets\Scenes\Case2主要测试三个方向：
 - Avatar类型模型加载
 - Scene类型模型加载
-- MultiScene混合模型加载
+- MultiScene多场景模型加载
 
 ## Case1
 
