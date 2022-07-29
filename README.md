@@ -10,7 +10,9 @@
 ## Case1
 
 Case1将模型内置，可以直接打包测试，适用于PC，Android，iOS三端
+
 ![image](https://user-images.githubusercontent.com/10473349/181674201-83da4789-088c-4e70-bada-bb9cfee13898.png)
+
 官方模型全存放在项目当中，跟随打包可直接在移动端运行。
 
 ## Case2
